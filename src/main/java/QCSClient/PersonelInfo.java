@@ -6,10 +6,10 @@ public class PersonelInfo {
   private String name;
   private Date birthDate;
   private String address;
-  private int phoneNumber;
+  private String phoneNumber;
   private HealthInfo healthInfo;
 
-  public PersonelInfo(String name, Date birthDate, String address, int phoneNumber) {
+  public PersonelInfo(String name, Date birthDate, String address, String phoneNumber) {
     this.name = name;
     this.birthDate = birthDate;
     this.address = address;
@@ -28,9 +28,9 @@ public class PersonelInfo {
 
   public void setAddress(String address) { this.address = address; }
 
-  public int getPhoneNumber() { return phoneNumber; }
+  public String getPhoneNumber() { return phoneNumber; }
 
-  public void setPhoneNumber(int phoneNumber) { this.phoneNumber = phoneNumber; }
+  public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
 
   public HealthInfo getHealthInfo() { return healthInfo; }
 

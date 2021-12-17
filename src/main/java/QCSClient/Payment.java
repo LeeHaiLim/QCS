@@ -1,22 +1,31 @@
 package QCSClient;
 
 public abstract class Payment {
-  private int paymentNumber;
-  private int paymentPassword;
+  private String paymentName;
+  private String paymentNumber;
+  private String paymentPassword;
 
-  public void setPaymentNumber(int paymentNumber) {
+  public void setPaymentNumber(String paymentNumber) {
     this.paymentNumber = paymentNumber;
   }
 
-  public void setPaymentPassword(int paymentPassword) {
+  public void setPaymentPassword(String paymentPassword) {
     this.paymentPassword = paymentPassword;
   }
 
-  public int getPaymentNumber() {
+  public String getPaymentName() {
+    return paymentName;
+  }
+
+  public void setPaymentName(String paymentName) {
+    this.paymentName = paymentName;
+  }
+
+  public String getPaymentNumber() {
     return paymentNumber;
   }
 
-  public int getPaymentPassword() {
+  public String getPaymentPassword() {
     return paymentPassword;
   }
 }

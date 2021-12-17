@@ -1,4 +1,12 @@
-<%@ page import="QCSClient.QCSmodel" contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="QCSClient.QCSmodel" import="QCSClient.QCSSecurity" contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="java.security.NoSuchAlgorithmException" %>
+<%!
+    QCSmodel qcSmodel = new QCSmodel();
+    QCSSecurity qcsSecurity = new QCSSecurity();
+    public String getData() throws Exception {
+        return qcsSecurity.encryptQR(qcSmodel.getData());
+    }
+%>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +40,7 @@
         width: 300,
         height: 300,
         type: "svg",
-        data: "QRcode",
+        data: "<%=getData()%>",
         image: "",
         dotsOptions: {
             color: "#4267b2",

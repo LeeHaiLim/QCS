@@ -13,6 +13,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$APPLICATION_HOME_DIR$/lib/intellij-xml.jar!/resources/html5-schema/html5/web-forms.rnc">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/build.gradle">
           <value>
             <set />
@@ -53,6 +58,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/QCSClient/QCSController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/QCSClient/QCSSecurity.java">
           <value>
             <set />
@@ -68,12 +78,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/QCSClient/ViewModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/QCSServer/QCSRepository.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/QCSmodel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/webapp/Controller.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/webapp/controller.jsp">
           <value>
             <set />
           </value>
@@ -99,6 +124,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/webapp/index4.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/webapp/login.js">
           <value>
             <set />
           </value>

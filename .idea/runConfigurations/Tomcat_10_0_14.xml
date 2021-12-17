@@ -1,6 +1,5 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Tomcat 10.0.14" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.14" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-    <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Gradle___org_example___untitled3_1_0_SNAPSHOT_war/" />
     <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
     <option name="UPDATING_POLICY" value="restart-server" />
     <deployment>

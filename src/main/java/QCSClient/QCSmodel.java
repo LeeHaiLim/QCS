@@ -3,14 +3,13 @@ package QCSClient;
 import QCSServer.QCSRepository;
 
 public class QCSmodel {
-  private TempUserAccount tempUserAccount;
+  private TempUserAccount tempUserAccount = new TempUserAccount();
 
-  public void setTempUserAccount() {
+  private void setTempUserAccount() {
     QCSRepository.setData(tempUserAccount.getId());
     this.tempUserAccount.setPersonelInfo(new PersonelInfo(QCSRepository.getName(), QCSRepository.getBirthDate(),
             QCSRepository.getAddress(),QCSRepository.getPhoneNumber()));
-    this.tempUserAccount.getPersonelInfo().getHealthInfo().setVcnDates(QCSRepository.getVcnDates());
-    this.tempUserAccount.getPersonelInfo().getHealthInfo().setVisitedAbroad(QCSRepository.isVisitedAbroad());
+    this.tempUserAccount.getPersonelInfo().setHealthInfo(new HealthInfo(QCSRepository.getVcnDates(),QCSRepository.isVisitedAbroad()));
     if(QCSRepository.getCvc()!=null) {
       this.tempUserAccount.setPayment(new CardPayment(QCSRepository.getPaymentName(),QCSRepository.getPaymentNumber(),
               QCSRepository.getPaymentPassword(),QCSRepository.getCvc()));
@@ -21,6 +20,8 @@ public class QCSmodel {
   }
 
   public String getData(){
+    setTempUserAccount();
+
     String userName = tempUserAccount.getPersonelInfo().getName();
     String userAddress = tempUserAccount.getPersonelInfo().getAddress();
     String userPhoneNumber = tempUserAccount.getPersonelInfo().getPhoneNumber();

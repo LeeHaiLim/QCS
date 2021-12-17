@@ -1,4 +1,4 @@
-<%@ page import="QCSClient.QCSmodel" contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
     <title>QR Code Styling</title>
@@ -49,22 +49,37 @@
     </div>
 </strong></h1>
 <div style="text-align : center;">
-    <form class="col qr-form" id="form">
-        <div style="height: auto; margin:0; border:5px solid black;">
+    <form class="col qr-form" id="form" action="controller.jsp" method="post">
+        <div style="height: auto; margin-left:20%; margin-right: 20%; border:5px solid black;">
             <h3> - 메인 옵션 - </h3>
             <div class="panel panel--open">
                 <label for="form-width">너비</label>
                 <div>
-                    <input node="width" id="form-width" type="number" min="100" max="10000" value="300"/>
+                    <input name="width" id="form-width" type="number" min="100" max="10000" value="300"/>
                 </div>
                 <label for="form-height">높이</label>
                 <div>
-                    <input node="height" id="form-height" type="number" min="100" max="10000" value="300"/>
+                    <input name="height" id="form-height" type="number" min="100" max="10000" value="300"/>
                 </div>
             </div>
             <br>
             <h3> - 도트 옵션 - </h3>
             <div class="panel">
+                <label for="form-style">도트 스타일</label>
+                <div id ="form-style">
+                    <input type='radio'
+                           name='style'
+                           value='square'
+                           onclick=/>square
+                    <input type='radio'
+                           name='style'
+                           value='rounded'
+                           onclick=/>rounded
+                    <input type='radio'
+                           name='style'
+                           value='dots'
+                           onclick=/>dots
+                </div> <br>
                 <label class="dotsOptionsHelper.colorType.single" for="form-dots-color">도트 색상</label>
                 <div class="dotsOptionsHelper.colorType.single">
                     <input node="dotsOptions.color" id="form-dots-color" type="color" value="#6a1a4c"/>
@@ -140,10 +155,13 @@
                            value="0"/>
                 </div>
             </div>
-            <button type="button"> 저장하기</button>
+            <button type="submit"> 저장하기</button>
             <br>
         </div>
     </form>
 </div>
+<%!
+
+%>
 </body>
 </html>

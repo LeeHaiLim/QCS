@@ -82,7 +82,7 @@
                 </div> <br>
                 <label class="dotsOptionsHelper.colorType.single" for="form-dots-color">도트 색상</label>
                 <div class="dotsOptionsHelper.colorType.single">
-                    <input node="dotsOptions.color" id="form-dots-color" type="color" value="#6a1a4c"/>
+                    <input name="dotsOptions.color" id="form-dots-color" type="color" value="#ffffff"/>
                 </div>
                 <label class="dotsOptionsHelper.colorType.gradient" style="visibility: hidden; height: 0">Gradient
                     Type</label>
@@ -95,7 +95,7 @@
                         <label for="form-dots-gradient-type-linear">Linear</label>
                     </div>
                     <div style="flex-grow: 1">
-                        <input node-data-field="checked" node="dotsOptionsHelper.gradient.radial"
+                        <input name-data-field="checked" name="dotsOptionsHelper.gradient.radial"
                                id="form-dots-gradient-type-radial" type="radio" name="dots-gradient-type"/>
                         <label for="form-dots-gradient-type-radial">Radial</label>
                     </div>
@@ -103,13 +103,13 @@
                 <label class="dotsOptionsHelper.colorType.gradient" style="visibility: hidden; height: 0">Dots
                     Gradient</label>
                 <div class="dotsOptionsHelper.colorType.gradient" style="visibility: hidden; height: 0">
-                    <input node="dotsOptionsHelper.gradient.color1" type="color" value="#6a1a4c"/>
-                    <input node="dotsOptionsHelper.gradient.color2" type="color" value="#6a1a4c"/>
+                    <input name="dotsOptionsHelper.gradient.color1" type="color" value="#ffffff"/>
+                    <input name="dotsOptionsHelper.gradient.color2" type="color" value="#ffffff"/>
                 </div>
                 <label class="dotsOptionsHelper.colorType.gradient" for="form-dots-gradient-rotation"
                        style="visibility: hidden; height: 0">Rotation</label>
                 <div class="dotsOptionsHelper.colorType.gradient" style="visibility: hidden; height: 0">
-                    <input node="dotsOptionsHelper.gradient.rotation" id="form-dots-gradient-rotation"
+                    <input name="dotsOptionsHelper.gradient.rotation" id="form-dots-gradient-rotation"
                            type="number" min="0" max="360" value="0"/>
                 </div>
             </div>
@@ -118,7 +118,7 @@
                 <label class="backgroundOptionsHelper.colorType.single" for="form-background-color">배경
                     색상</label>
                 <div class="backgroundOptionsHelper.colorType.single">
-                    <input node="backgroundOptions.color" id="form-background-color" type="color"
+                    <input name="backgroundOptions.color" id="form-background-color" type="color"
                            value="#ffffff"/>
                 </div>
                 <label class="backgroundOptionsHelper.colorType.gradient"
@@ -126,13 +126,13 @@
                 <div class="backgroundOptionsHelper.colorType.gradient space-between-container"
                      style="visibility: hidden; height: 0">
                     <div style="flex-grow: 1">
-                        <input node-data-field="checked" node="backgroundOptionsHelper.gradient.linear"
+                        <input name-data-field="checked" name="backgroundOptionsHelper.gradient.linear"
                                id="form-background-gradient-type-linear" type="radio"
                                name="background-gradient-type" checked/>
                         <label for="form-background-gradient-type-linear">Linear</label>
                     </div>
                     <div style="flex-grow: 1">
-                        <input node-data-field="checked" node="backgroundOptionsHelper.gradient.radial"
+                        <input name-data-field="checked" name="backgroundOptionsHelper.gradient.radial"
                                id="form-background-gradient-type-radial" type="radio"
                                name="background-gradient-type"/>
                         <label for="form-background-gradient-type-radial">Radial</label>
@@ -142,19 +142,18 @@
                        style="visibility: hidden; height: 0">Background Gradient</label>
                 <div class="backgroundOptionsHelper.colorType.gradient"
                      style="visibility: hidden; height: 0">
-                    <input node="backgroundOptionsHelper.gradient.color1" type="color" value="#ffffff"/>
-                    <input node="backgroundOptionsHelper.gradient.color2" type="color" value="#ffffff"/>
+                    <input name="backgroundOptionsHelper.gradient.color1" type="color" value="#ffffff"/>
+                    <input name="backgroundOptionsHelper.gradient.color2" type="color" value="#ffffff"/>
                 </div>
                 <label class="backgroundOptionsHelper.colorType.gradient"
                        for="form-background-gradient-rotation"
                        style="visibility: hidden; height: 0">Rotation</label>
                 <div class="backgroundOptionsHelper.colorType.gradient"
                      style="visibility: hidden; height: 0">
-                    <input node="backgroundOptionsHelper.gradient.rotation"
+                    <input name="backgroundOptionsHelper.gradient.rotation"
                            id="form-background-gradient-rotation" type="number" min="0" max="360"
                            value="0"/>
                 </div>
-            </div>
             <button type="submit"> 저장하기</button>
             <br>
         </div>
